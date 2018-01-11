@@ -12,6 +12,11 @@
    * on this dom element, set the className to 'light-green'
    */
 
+   function setMyLightGreen() {
+    let lightId = this.dataset.lightId; // set lightId variable
+    document.getElementById(lightId).className = "light-green"; // change className
+   }
+
 
   /*
    * Create a function named setMyLightClass
@@ -25,12 +30,33 @@
    * on this dom element, set the className to the value of desiredClass
    */
 
+   function setMyLightClass(event, desiredClass) {
+     let lightId = this.dataset.lightId;
+     document.getElementById(lightId).className = "desiredClass";
+   }
+
 
   /*
    * Declare 15 constants btn1, btn2, btn3, ...
    * use a dom element selector method to assign each const
    * to the button that has an id of the same name.
    */
+
+   const btn1 = document.querySelector("#btn1");
+   const btn2 = document.querySelector("btn2");
+   const btn3 = document.querySelector("btn3");
+   const btn4 = document.querySelector("btn4");
+   const btn5 = document.querySelector("btn5");
+   const btn6 = document.querySelector("btn6");
+   const btn7 = document.querySelector("btn7");
+   const btn8 = document.querySelector("btn8");
+   const btn9 = document.querySelector("btn9");
+   const btn10 = document.querySelector("btn10");
+   const btn11 = document.querySelector("btn11");
+   const btn12 = document.querySelector("btn12");
+   const btn13 = document.querySelector("btn13");
+   const btn14 = document.querySelector("btn14");
+   const btn15 = document.querySelector("btn15");
 
 
   /*
@@ -41,6 +67,10 @@
    * using the Function prototype method: apply
    * to set the context to the correct object (the current context)
    */
+
+   btn1.addEventListener("click", function() {
+     setMyLightGreen.apply(this);
+   })
 
 
   /*
