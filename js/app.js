@@ -100,9 +100,10 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
-  let btn4Args = [event, "light-green"];
+  
   
   btn4.addEventListener("click", function(event) {
+    let btn4Args = [event, "light-green"];
     setMyLightClass.apply(this, btn4Args);
   })
 
@@ -117,9 +118,10 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
-  let btn5Args = [event, "light-green"];
+  
 
   btn5.addEventListener("click", (event) => {
+    let btn5Args = [event, "light-green"];
     setMyLightClass.apply(btn5, btn5Args);
   })
 
